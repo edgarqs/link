@@ -68,7 +68,7 @@ body {
 }
 
 .social-networks a.twitter {
-    background-color: #5bd1d7;
+    background-color: #000000;
 }
 
 .social-networks a.instagram {
@@ -77,4 +77,43 @@ body {
 
 .social-networks a.github {
     background-color: #24292e;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px; /* Añadir espacio interno */
+    }
+
+    .profile-info {
+        flex-direction: column; /* Cambiar la dirección de la columna */
+    }
+
+    .profile-picture {
+        margin-right: 0; /* Eliminar el margen */
+        margin-bottom: 20px; /* Agregar espacio inferior */
+    }
+
+    .profile-picture img {
+        width: 120px; /* Reducir el tamaño de la foto */
+        height: 120px; /* Reducir el tamaño de la foto */
+    }
+
+    .profile-details {
+        text-align: center; /* Centrar los detalles del perfil */
+    }
+
+    .h1titulo {
+        font-size: 1.5rem; /* Reducir el tamaño del título */
+        margin-bottom: 10px; /* Agregar espacio inferior */
+    }
+
+    .social-networks {
+        margin-top: 10px; /* Reducir el espacio superior */
+    }
+
+    .social-networks a {
+        height: 36px; /* Reducir el tamaño de los botones de redes sociales */
+        width: 36px; /* Reducir el tamaño de los botones de redes sociales */
+    }
 }
